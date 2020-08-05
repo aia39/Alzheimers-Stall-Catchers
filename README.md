@@ -30,10 +30,14 @@ A Non-Stalled Sample : ![Non-Stalled sample](screenshots/nonstalled.JPG)
 
 From the perspective of Image approach, we extracted the region of interest which was marked by orange close loop in the raw video frame. One major imporvement came after we colored with a specific color outside of ROI in the cropped frame as network think that as don't care data which helps network to differentiate between ROI data and outside of ROI data without any confusion.
  
-Raw video frame sample : ![Raw Frame](screenshots/mainimg.jpg)
+Raw video frame sample :
+
+![Raw Frame](screenshots/mainimg.jpg)
 
 Here don't care data (outside of ROI data) is given Blue color.
-ROI extracted sample : ![ROI](screenshots/roi.jpg)
+ROI extracted sample :
+
+![ROI](screenshots/roi.jpg)
 
 # Solution Approach
 
