@@ -6,9 +6,6 @@ from tqdm import tqdm
 import pandas as pd
 
 
-
-
-
 src_directory = "../../dataset/micro/"
 files = [f for f in glob.glob(src_directory + "*" + ".mp4", recursive=True)]
 already_downloaded = []

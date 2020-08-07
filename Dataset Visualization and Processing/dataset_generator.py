@@ -246,16 +246,13 @@ class Generator:
 
 if __name__ == "__main__":
     # Location of original dataset
-    src_directory = "../../dataset/new/nonstall_7/"
+    src_directory = "../../dataset/micro/"
 
     # Target Location of converted dataset
-    dst_directory = "../../micro_7"
+    dst_directory = "../../micro"
 
     # Generator().generate_processed_dataset(src_directory, dst_directory, testing=True)
-    # Generator().generate_point_cloud_dataset(src_directory, dst_directory, testing=False)
     Generator().generate_tensor_dataset(src_directory, dst_directory, testing=False)
-    # Generator().projections_from_cloud(src_directory, dst_directory, testing=False)
-    # Generator().images_from_cloud(src_directory, dst_directory, testing=False)
     # os.system('find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf')
 
 

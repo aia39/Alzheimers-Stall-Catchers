@@ -179,7 +179,8 @@ if __name__ == "__main__":
 
     filename = "../../micro/100109.mp4"
     extractor = VideoProcessor(filename)
-    extracted_images = extractor.process_video(roi_extraction=False, average_frames=True)
-    # os.system('find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf')
+    extracted_images = extractor.process_video(roi_extraction=True, filter_enabled=True, average_frames=True)
 
-    Interactive(extracted_images).plot_intensities()
+    Interactive(extracted_images).show_point_cloud(percentile=99, clustering=True,
+                                                                       filter_outliers=True)
+
