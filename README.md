@@ -62,7 +62,7 @@ The repository encapsulates the work of all the team members during the competit
 
 # Getting Started
 
-* # Point Cloud Based Approach
+## i) Point Cloud Based Approach
 - Firstly run the code to generate point cloud from the video data. Code can be found in 'Dataset Visualization and Processing' folder.
 ```bash
 python dataset_generator.py
@@ -70,6 +70,17 @@ python dataset_generator.py
 - Then to train you have to run the <a href="https://github.com/ClockWorkKid/Alzheimers-Stall-Catchers/blob/master/Point%20Cloud%20Based%20Approach/Pointcloud_training_resnet_densenet.ipynb">notebook</a> from 'Point Cloud Based Approach' folder for DenseNet, ResNet model. Or run this <a href="https://github.com/ClockWorkKid/Alzheimers-Stall-Catchers/blob/master/Point%20Cloud%20Based%20Approach/Train_3DptCloud_clsballoss.ipynb">notebook</a> for ResNext, Wide_ResNet model. 
 
 - Lastly, for inferencing you have to run <a href="https://github.com/ClockWorkKid/Alzheimers-Stall-Catchers/blob/master/Point%20Cloud%20Based%20Approach/Pointcloud_inference_resnet_densenet.ipynb">notebook</a> from 'Point Cloud Based Approach' folder for DenseNet, ResNet model. Or run this <a href="https://github.com/ClockWorkKid/Alzheimers-Stall-Catchers/blob/master/Point%20Cloud%20Based%20Approach/Inference_3DptCloud.ipynb">notebook</a> for ResNext, Wide_ResNet model inference. All the notebooks were used in google colab. So you can modify it to use in your local machine. 
+
+## ii) Image Based Approach
+- First create a folder naming your dataset (e.g "micro") and keep all the videos in that folder.
+- Then place [this](https://github.com/iampartho/Alzheimers-Stall-Catchers/blob/master/Image%20Based%20Approach/extract_frames_new.py) code on the directory of your dataset folder and open terminal and run the following code
+```
+python extract_frames_new.py --dataset_name micro
+```
+- It will create a new folder name **"micro_frames"** which will have the extracted video frames with the region of interest
+- Make a zip of that folder and upload it to your **google drive** (in order to use the [training notebook](https://github.com/iampartho/Alzheimers-Stall-Catchers/blob/master/Image%20Based%20Approach/training_notebook.ipynb) and train our algorithm in google colab)
+- Create some folds of your own or use [this](https://github.com/iampartho/Alzheimers-Stall-Catchers/tree/master/Image%20Based%20Approach/traintestlist) folder for either reference or use. Then make a zip of that folder and upload it to your google drive
+- Finally use [this](https://github.com/iampartho/Alzheimers-Stall-Catchers/blob/master/Image%20Based%20Approach/training_notebook.ipynb) notebook and google colab to conduct your training. Details of every cell of the training code can be found [here](https://github.com/iampartho/Alzheimers-Stall-Catchers/blob/master/Image%20Based%20Approach/README.md)
 
 # References
 
