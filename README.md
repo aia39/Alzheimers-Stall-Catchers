@@ -90,7 +90,7 @@ python extract_frames_new.py --dataset_name micro
 
 - <a href="https://github.com/iampartho">Partho Ghosh</a>
 - <a href="https://github.com/aia39">Md. Abrar Istiak Akib</a>
-- Swapnil Saha
+- <a href="https://github.com/swapnil-saha">Swapnil Saha</a>
 - <a href="https://github.com/ClockWorkKid">Mir Sayeed Mohammad</a>
 
 
